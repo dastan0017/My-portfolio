@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dastan Rakhmanzhanov</title>
-    <link rel="stylesheet" href="default.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
@@ -13,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="default.css" type="text/css" />
+    <link id="theme-style" rel="stylesheet" href="" type="text/css" />
   </head>
   <body>
     <section class="style-1">
@@ -42,10 +44,10 @@
               Persolalize Theme
             </h5>
             <div class="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
             <p class="settings-note">
               Theme settings will be saved for<br />
@@ -125,14 +127,81 @@
 
     <section class="style-1">
       <div class="main-container">
-        Portfolio
+        <h3 style="text-align: center;">My past projects</h3>
+
+        <div class="post-wrapper">
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="img/catalog.png" alt="" srcset="" />
+              <div class="post-preview">
+                <h6 class="post-title">Online Store On Shopify</h6>
+                <p class="post-intro">
+                  Shopify. I made a website on shopify and now they can add,
+                  delete, change, sort and do other cool things with products.
+                </p>
+                <a href="post.html">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img
+                class="thumbnail"
+                src="img/landingPage.png"
+                alt=""
+                srcset=""
+              />
+              <div class="post-preview">
+                <h6 class="post-title">
+                  Langing Page. WEB developer's services
+                </h6>
+                <p class="post-intro">
+                  Complete wEbSiTe using Figma, HTML, CSS, JS.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="img/forkify.png" alt="" srcset="" />
+              <div class="post-preview">
+                <h6 class="post-title">Forkify Project</h6>
+                <p class="post-intro">
+                  Forkify project: Working with real world API, ES6, Webpack,
+                  npm, Pagination, Calculations, LocalStorage etc.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="style-2">
       <div class="main-container">
-        Contact
+        <h3 style="text-align: center;">Get In Touch</h3>
+
+        <form class="contact-form">
+          <label for="">Name</label>
+          <input class="input-field" type="text" name="name" />
+
+          <label for="">Subject</label>
+          <input class="input-field" type="text" name="subject" />
+
+          <label for="">Email</label>
+          <input class="input-field" type="text" name="email" />
+
+          <label for="">Message</label>
+          <textarea class="input-field" name="message"></textarea>
+
+          <input id="submit-btn" type="submit" value="send" />
+        </form>
       </div>
     </section>
+    <script src="main.js" type="text/javascript"></script>
   </body>
 </html>
