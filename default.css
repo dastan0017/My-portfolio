@@ -19,6 +19,10 @@ body {
   margin: 0;
 }
 
+body * {
+  transition: 0.2s;
+}
+
 h1,
 h2,
 h3,
@@ -124,6 +128,9 @@ textarea {
 .navigation li {
   display: inline-block;
   margin: 0 5px;
+}
+.navigation a {
+  color: var(--mainText);
 }
 
 .dots-wrapper {
